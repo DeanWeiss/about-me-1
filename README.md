@@ -10,14 +10,18 @@ This lab includes an "About Me" guessing game.
 
 - If applicable.
 
-### Reflections
+### Reflections and Comments
+
+- If applicable.
 
 ---
 
 ## Lab 02
 
-- If applicable.
-
 ### Links and Resources
 
-### Reflections
+- If applicable.
+
+### Reflections and Comments
+
+- If applicable.
