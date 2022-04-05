@@ -98,3 +98,5 @@ while(loopCheck !== true){
   }
 
 }
+
+alert(`Thanks for playing, ${siteVisitor}! Enjoy!`);
