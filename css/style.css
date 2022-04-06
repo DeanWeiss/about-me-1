@@ -21,3 +21,23 @@ h2 {
 p {
   padding-left: 15px;
 }
+
+/* Reference to acheive bulleted lists using CSS: https://stackoverflow.com/questions/32039846/can-i-use-css-to-add-a-bullet-point-to-any-element */
+
+ol li {
+  display: list-item;
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding-left: 15px;
+}
+
+ul li {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 15px;
+}
+
+strong {
+  font-weight: bold;
+}
