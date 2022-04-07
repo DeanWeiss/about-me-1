@@ -10,20 +10,24 @@ alert(`Welcome, ${siteVisitor}! Let's play a game! Please answer "Yes" or "No".`
 
 // Question 1
 
-while(loopCheck !== true){
-  let responseOne = prompt('I like cats. "Yes or No"?').toLowerCase();
+function q1(){
 
-  if(responseOne === 'yes' || responseOne === 'y'){
-    // console.log('You are correct!');
-    alert('You are correct!');
-    correctCounter++;
-    loopCheck = true;
-  } else if(responseOne === 'no' || responseOne === 'n'){
-    // console.log('Sorry! You are wrong.');
-    alert('Sorry! You are wrong.');
-    loopCheck = true;
-  } else {
-    alert('Invalid entry. Try "Yes", "Y", "No", or "N".');
+  while(loopCheck !== true){
+    let responseOne = prompt('I like cats. "Yes or No"?').toLowerCase();
+
+    if(responseOne === 'yes' || responseOne === 'y'){
+      // console.log('You are correct!');
+      alert('You are correct!');
+      correctCounter++;
+      loopCheck = true;
+    } else if(responseOne === 'no' || responseOne === 'n'){
+      // console.log('Sorry! You are wrong.');
+      alert('Sorry! You are wrong.');
+      loopCheck = true;
+    } else {
+      alert('Invalid entry. Try "Yes", "Y", "No", or "N".');
+    }
+
   }
 
 }
@@ -174,3 +178,7 @@ for(let i = 0; i < attempt2; i++){
 }
 
 alert(`Thanks for playing, ${siteVisitor}! You got ${correctCounter} questions correct!`);
+
+// functions invoked below
+
+q1();
