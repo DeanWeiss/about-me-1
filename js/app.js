@@ -4,8 +4,11 @@
 
 let siteVisitor = prompt('What is your name?');
 let loopCheck = false;
+let correctCounter = 0;
 
 alert(`Welcome, ${siteVisitor}! Let's play a game! Please answer "Yes" or "No".`);
+
+// Question 1
 
 while(loopCheck !== true){
   let responseOne = prompt('I like cats. "Yes or No"?').toLowerCase();
@@ -13,6 +16,7 @@ while(loopCheck !== true){
   if(responseOne === 'yes' || responseOne === 'y'){
     // console.log('You are correct!');
     alert('You are correct!');
+    correctCounter++;
     loopCheck = true;
   } else if(responseOne === 'no' || responseOne === 'n'){
     // console.log('Sorry! You are wrong.');
@@ -23,6 +27,8 @@ while(loopCheck !== true){
   }
 
 }
+
+// Question 2
 
 loopCheck = false;
 
@@ -36,12 +42,15 @@ while(loopCheck !== true){
   } else if(responseTwo === 'no' || responseTwo === 'n'){
     // console.log('You are correct!');
     alert('You are correct!');
+    correctCounter++;
     loopCheck = true;
   } else {
     alert('Invalid entry. Try "Yes", "Y", "No", or "N".');
   }
 
 }
+
+// Question 3
 
 loopCheck = false;
 
@@ -51,6 +60,7 @@ while(loopCheck !== true){
   if(responseThree === 'yes' || responseThree === 'y'){
     // console.log('You are correct!');
     alert('You are correct!');
+    correctCounter++;
     loopCheck = true;
   } else if(responseThree === 'no' || responseThree === 'n'){
     // console.log('Sorry! You are wrong.');
@@ -62,6 +72,8 @@ while(loopCheck !== true){
 
 }
 
+// Question 4
+
 loopCheck = false;
 
 while(loopCheck !== true){
@@ -70,6 +82,7 @@ while(loopCheck !== true){
   if(responseFour === 'yes' || responseFour === 'y'){
     // console.log('You are correct!');
     alert('You are correct!');
+    correctCounter++;
     loopCheck = true;
   } else if(responseFour === 'no' || responseFour === 'n'){
     // console.log('Sorry! You are wrong.');
@@ -79,6 +92,8 @@ while(loopCheck !== true){
     alert('Invalid entry. Try "Yes", "Y", "No", or "N".');
   }
 }
+
+// Question 5
 
 loopCheck = false;
 
@@ -92,6 +107,7 @@ while(loopCheck !== true){
   } else if(responseFive === 'no' || responseFive === 'n'){
     // console.log('You are correct!');
     alert('You are correct!');
+    correctCounter++;
     loopCheck = true;
   } else {
     alert('Invalid entry. Try "Yes", "Y", "No", or "N".');
@@ -99,4 +115,60 @@ while(loopCheck !== true){
 
 }
 
-alert(`Thanks for playing, ${siteVisitor}! Enjoy!`);
+// Question 6
+
+let correctAnswer = 33;
+let attempt1 = 4;
+let responseSix;
+
+for(let i = 0; i < attempt1; i++){
+  responseSix = parseInt(prompt('Guess a number'));
+  if(responseSix === correctAnswer){
+    alert('Ding! Ding! Ding! You are a winner!');
+    correctCounter++;
+    break;
+  } else if(responseSix < correctAnswer){
+    alert('Too low! Guess Again');
+  } else if(responseSix > correctAnswer){
+    alert('Too high! Guess again!');
+  } else {
+    alert('Invalid input!');
+
+  }
+}
+
+if(responseSix !== correctAnswer){
+  alert(`Better luck next time! The answer was ${correctAnswer}`);
+}
+
+// Question 7
+
+let correctOptions = ['halo 2', 'starcraft', 'elden ring'];
+let attempt2 = 6;
+let responseSeven;
+let loopCheck2 = false;
+
+for(let i = 0; i < attempt2; i++){
+  responseSeven = prompt('What is one of my top 10 video games of all time?').toLowerCase();
+
+  for(let j = 0; j < correctOptions.length; j++){
+
+    if(correctOptions[j] === responseSeven){
+      alert('Ding! Ding! Ding! You are a winner!');
+      correctCounter++;
+      loopCheck2 = true;
+      break;
+    }
+  }
+
+  if(loopCheck2){
+    break;
+  } else if(i === attempt2-1){
+    alert(`Nice try, but you are out of guesses! My favorite games are ${correctOptions}`);
+    break;
+  } else{
+    alert(`Sorry, ${responseSeven} isn't one of them!`);
+  }
+}
+
+alert(`Thanks for playing, ${siteVisitor}! You got ${correctCounter} questions correct!`);
