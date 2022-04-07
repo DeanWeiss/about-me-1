@@ -18,16 +18,16 @@ I had a lot of fun with this assignment. I really wanted to account for an inval
 
 ## Lab 02
 
-This lab includes an "About Me" guessing game.
+We're looping through arrays!
 
 ### Author: Dylan Ullrich
 
 ### Links & Resources
 
-https://stackoverflow.com/questions/32039846/can-i-use-css-to-add-a-bullet-point-to-any-element
+How to remake bullet points in CSS: [https://stackoverflow.com/questions/32039846/can-i-use-css-to-add-a-bullet-point-to-any-element](https://stackoverflow.com/questions/32039846/can-i-use-css-to-add-a-bullet-point-to-any-element)
 
 ### Reflections and Comments
 
--
+I definitely had a harder time with this one. I still had fun with it though. I felt pretty good about everything until I was struggling to properly loop through arrays and then break out of the loop. I spent a little more time on stuggling on that one than I should have, but I feel good that I got everything to work eventually.
 
 ---
