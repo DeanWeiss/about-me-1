@@ -116,6 +116,7 @@ while(loopCheck !== true){
 }
 
 // Question 6
+// Ben Small and Sam Brindle helped me work on six. I did not know about ParseInt prior.
 
 let correctAnswer = 33;
 let attempt1 = 4;
@@ -142,6 +143,7 @@ if(responseSix !== correctAnswer){
 }
 
 // Question 7
+// Ben Small and Sam Brindle helped me work on seven with looping through the array.
 
 let correctOptions = ['halo 2', 'starcraft', 'elden ring'];
 let attempt2 = 6;
